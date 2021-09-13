@@ -1,6 +1,3 @@
-import pymongo
-mongo = pymongo.MongoClient('mongodb://localhost:27017/')
-
 def calculate():
     operation = input('''
 Por favor escolha a operação desejada:
@@ -38,7 +35,7 @@ Por favor escolha a operação desejada:
 def again():
     calc_again = input('''
 Quer fazer outra operação?
-Pressione Y para SIM ou N para NÂO.
+Pressione S para SIM ou N para NÂO.
 ''')
 
     if calc_again.upper() == 'S':
